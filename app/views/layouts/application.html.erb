@@ -12,7 +12,20 @@
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
+
+    <nav class="bg-gray-800 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <div>
+          <%= link_to 'Watchlist', lists_path, class: "text-slate-100" %>
+        </div>
+        <div>
+          <%= link_to 'Add new list', new_list_path, class: "text-slate-100" %>
+        </div>
+      </div>
+    </nav>
+
+
+    <main class="container mx-auto mt-28 px-5P">
       <%= yield %>
     </main>
   </body>
